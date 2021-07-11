@@ -6,14 +6,16 @@
     <title>Teléfonos - 1</title>
   </head>
   <body>
-    <h5>Listado de telefonos - {{numero}}</h5>
+    <h5>Listado de telefonos - {{numero_edificio}}</h5>
 
-    {% for e in datos %}
+    {% for e in edificio %}
 
     <ol>
-      <li><b>Teléfono: </b>{{e['telefono']}}</li>
+      <li><b>Nombre: </b>{{e['nombre']}}</li>
+      <li><b>Direccion: </b>{{e['direccion']}}</li>
+      <li><b>Ciudad: </b>{{e['ciudad']}}</li>
       <li><b>Tipo: </b>{{e['tipo']}}</li>
-      <li><b>Estudiante: </b>{{e['estudiante']}}</li>
+      
     </ol>
     <hr>
     {% endfor%}

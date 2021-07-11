@@ -11,9 +11,10 @@
     {% for e in datos %}
 
     <ol>
-      <li><b>Teléfono: </b>{{e['telefono']}}</li>
-      <li><b>Tipo: </b>{{e['tipo']}}</li>
-      <li><b>Estudiante: </b>{{e['estudiante']}}</li>
+      <li><b>Nombre: </b>{{e['nombre_completo']}}</li>
+      <li><b>Costo: </b>{{e['costo']}}</li>
+      <li><b>Numero cuartos: </b>{{e['num_cuartos']}}</li>
+      <li><b>Edificio: </b>{{e['edificio']}}</li>
     </ol>
     <hr>
     {% endfor%}
